@@ -1,19 +1,11 @@
 #include <Arduino.h>
-
-#define LED_PIN 2
-
+int x = 2;
 void setup(){
-  pinMode(LED_PIN,OUTPUT);
-  Serial.begin(115200);
-  Serial.println('ESP32')
+pinMode(x,OUTPUT);
 }
-
 void loop(){
-  digitalWrite(LED_PIN,HIGH);
-  Serial.println('LED ON');
-  delay(100);
-
-  digitalWrite(LED_PIN,LOW);
-  Serial.println('LED OFF');
-  delay(3000);
+digitalWrite(x,HIGH);
+delay(3000);
+digitalWrite(x,LOW);
+delay(3000);
 }
